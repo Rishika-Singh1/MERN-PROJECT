@@ -1,0 +1,15 @@
+1. Predicted Output:
+
+Hello
+TypeError: sayHi is not a function
+
+
+Explanation:
+
+sayHello() is a function declaration, which is fully hoisted along with its definition.
+Therefore, calling it before its declaration works and prints "Hello".
+
+sayHi is declared using var and assigned a function expression.
+During hoisting, only the variable sayHi is hoisted and initialized as undefined.
+
+When sayHi() is called, it tries to execute undefined as a function, which causes a TypeError.

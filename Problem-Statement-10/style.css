@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.profile-card {
+  background: #ffffff;
+  width: 300px;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.bio {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.info div h3 {
+  font-size: 18px;
+}
+
+.info div span {
+  font-size: 12px;
+  color: #777;
+}
+
+.follow-btn {
+  padding: 10px 25px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.follow-btn:hover {
+  background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .profile-card {
+    width: 90%;
+  }
+}
